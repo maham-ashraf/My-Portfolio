@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maham Ashraf – BSIT Student, Web Developer & AI Explorer. View projects, skills, and contact information." />
+  <meta name="keywords" content="Maham Ashraf, Web Developer, BSIT, Web Development, Portfolio" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <title>Maham Ashraf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="images/maham.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <!-- <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">MA</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div> -->
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        MA.
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ===================== HERO (PROFILE HEADER) ===================== -->
+  <section id="hero" class="hero">
+    <div class="profile-cover"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content reveal">
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <img src="images/maham ashraf.png" alt="Maham Ashraf" />
+        </div>
+        <div class="profile-meta">
+          <h1 class="hero-name">Maham <span class="gradient-text">Ashraf</span></h1>
+          <div class="typing-wrapper">
+             <span id="typed-text" class="typed-text"></span>
+          </div>
+          <p class="hero-tagline">BSIT Student | Honhaar Scholarship Recipient | Web Developer
+Building responsive web applications and exploring AI powered technologies to create impactful digital solutions.</p>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/maham-ashraf-it/" target="_blank" class="social-mini"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> <span>LinkedIn</span></a>
+            <a href="https://github.com/maham-ashraf" target="_blank" class="social-mini"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> <span>GitHub</span></a>
+          </div>
+          <div class="hero-btns">
+            <a href="MY CV.pdf" class="btn btn-primary" id="download-cv-btn" download>
+              Download Resume / CV
+            </a>
+            <a href="#projects" class="btn btn-secondary" id="hero-projects-btn">
+              View My Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-card reveal">
+        <h3 class="about-subtitle">Professional Summary</h3>
+        <p class="about-text">I am a BSIT student focused on <strong>Web Development</strong>. I am currently strengthening my skills in JavaScript, backend development, and APIs, while continuously learning modern web technologies and improving my problem-solving abilities.</p>
+        <p class="about-text">I enjoy building <strong>real-world projects</strong> that turn ideas into functional solutions. I have been awarded the <strong>Honhaar Scholarship by CM Punjab</strong> for academic excellence and I am consistently maintaining a strong academic record.</p>
+        <p class="about-text">Alongside this, I am also exploring emerging areas in <strong>Artificial Intelligence and Large Language Models</strong>, as I am interested in understanding how intelligent systems are shaping the future of technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid reveal">
+        <article class="skill-card reveal">
+          <div class="skill-card-header">
+            <!-- <div class="skill-card-icon frontend" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="16" rx="3" />
+                <path d="M7 8h10M7 12h10M7 16h6" />
+              </svg>
+            </div> -->
+            <div>
+              <h3 class="skill-card-title">Website Development</h3>
+              <p class="skill-card-subtitle">Building attractive responsive interfaces with modern web standards.</p>
+            </div>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-html5-plain colored"></i></span>HTML5</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-css3-plain colored"></i></span>CSS3</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-bootstrap-plain colored"></i></span>Bootstrap</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-javascript-plain colored"></i></span>JavaScript</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><svg viewBox="0 0 24 24" style="width: 1em; height: 1em; fill: #17a2b8; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
+</svg></span>Responsive Web Design</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-header">
+            <!-- <div class="skill-card-icon backend" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+                <path d="M7 4v3M17 4v3" />
+              </svg>
+            </div> -->
+            <div>
+              <h3 class="skill-card-title">Backend Development</h3>
+              <p class="skill-card-subtitle">Server-side solutions and database-driven web experiences.</p>
+            </div>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-php-plain colored"></i></span>PHP</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-mysql-plain colored"></i></span>MySQL</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-header">
+            <!-- <div class="skill-card-icon fundamentals" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 6l4 4-4 4" />
+                <path d="M16 6l-4 4 4 4" />
+              </svg>
+            </div> -->
+            <div>
+              <h3 class="skill-card-title">Programming Fundamentals</h3>
+              <p class="skill-card-subtitle">Core concepts that support clean code and efficient problem solving.</p>
+            </div>
+          </div>
+          <div class="skill-badges">
+  <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-cplusplus-plain colored"></i></span>C++</span>
+  <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-graphql-plain colored"></i></span>DSA</span>
+  
+  <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-threejs-original colored"></i></span>OOP</span>
+</div>
+          <!-- <div class="skill-badges">
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-cplusplus-plain colored"></i></span>C++</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-graphql-plain colored"></i></i></span>DSA</span>
+          </div> -->
+          
+          
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-header">
+            <!-- <div class="skill-card-icon tools" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 8h14v10H5z" />
+                <path d="M8 8v-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2" />
+                <path d="M9 12h6" />
+              </svg>
+            </div> -->
+            <div>
+              <h3 class="skill-card-title">Tools &amp; Platforms</h3>
+              <p class="skill-card-subtitle">Everyday tools I use to ship projects, manage code, and maintain environments.</p>
+            </div>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-git-plain colored"></i></span>Git</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-github-original colored"></i></span>GitHub</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-vscode-plain colored"></i></span>VS Code</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-xampp-plain colored"></i>
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAdVBMVEX7eiT////7dxr/+PX+4tb7h0L7bQD6agD7cAD7eB/9x637dAz7dRX+6+L//Pr+7eP7j0/+8+37jEn9zrX90rv92MX7fi78qn77klX8rob8p3j+59v+3s/7gjn7gjT8t5X7nWr8v577mGL6YQD8tY37lmf7o3CQtDU/AAAMG0lEQVR4nO2da4OqOBKGIdwSEkFUFAREaNf//xMX2nO6BasCCfQRe3x3Zr+MDXlyqdyqCsP8RTKeXYA59R+BsaJVZi9O2SqyFGGsfFel13qzcRamzTq5XvydDQNBMJF/2AhKuRBkeRKcUiNJtxAOALOtDSqMJYsJvj/HI2CidM/Zs0s7LMZPZTAEE11fAaUVEYd+V+vBREf+7EKOFuOXQAYTlO6zi6ggRisZTLx/kT52k3ByHCY60meXT01u1wh0YOLXGTA3kSLDYKzDizVM0zTbAIEJ9+TZhVMVv0YITP5KpuwmZoQwzGvZ5T9yYwTm+mrjv5HrwzCW83JDxjBoGsAw7KVmzJt4jcDQF4QhhYXAPLtkGmIGAvOCxqxZOv8mGPqbYH5Vy7xhFqrfNWbeMAvVG2axesMsVW+YnxPh1PU8z3Wp0NjqzgjD2nK4TUGaf3UudYTr8eKcVpXvV+UxMainuqmaC4Z6nnEtt7m9WmV57Kcb78NV2awS98Mp7cgKGplm83+WFe6u3ofSucocMEy47JD3r3vCy8kV43iaBzgVeDVpn7nCBn46DCFGDVzDfRbluCfDXZ/hD2gUlcXo4eNOhGGkSLPHInw3jzOEI2QoNxyHjGudiTDidLClJTGztJD1e8bX/sN9ZF/20RhlUCbBMF7vBktixjXe7Qk9Str1S4HvjLFsU2AILVcjSmKGpYE0Dt/D4/5R+XkEzQQYbmyHm+VTwRbuatzZjXtAWyPpsFnTh6Gn/PGVmOIEqFi6lo/8rqxykEYbhjoKLM0Yrh9o+FrpCSNodGG4M2DF+srWvZ4mCpV2aRWkA+NGE0ao9LGbbKdjXomxVX2CaV3lNHowxBg/cr+UF3fTJyOV+hPMqJbON1oweiUx/buJXJx1nmDmJ9l6QguGdO51x+u7z5MiHP45pErWNDowPfeB8Qq+ho2rPmD+qJYsjnRgRKVbkty7PYEnuk8wVxIboAFDNiOXIIAOt+d6inb9XileNA0YT3V+uNPKaG0A1Rv9N0X41Okpw5DThJLcnCVc5UnqXhe0bOownvbYbZU1TSNq/X5qtqMGaxplGEanFMSMDnRidTTrAMygKcO4F8l7AivL85Ul2xnETb3iu6Bg5dfNvLg5xJLG23mzweD93Yqv9MPzPH6O8Uk1S1x8ys0OrscJY4J6J9D1+lMrzOFSFYbsJSWhtzmAUTeJsdax0o8K+2+74vusTdAj1oAR1s9UYegVqbCg2X99Vxjl6H7Y97BF6o531iruGVnyBBVSOlUYF6vW2OlUF3NLrMjY7sHmvXWXe0TetZsLBpkxQ6fX9IwiDZBfkem/v3trXoY9AlltKsIwgqwxHx2HiQN3tNCHew9Q3dyBX2Yj3nCKMKSAR2UIWEvhgz+1MhgyAarbg6sug35rKK/NxBqGgZYYogZ/isgyAHvb94n/o/AMmzPFlhE1bJkLoN2Jo7KFy6G5A6kPzDYrwvAzXEDo7oIVKgv9HTQMCDxoIsSDXBUGmb2hmmInlb0CCMOKH4VBWgaKGmJ7lSOcHdTNGLzdmAkGGzPQoYkajK8Cg0SQqMIk8CQBmRe2V1nqp+CY2YC/DecxAMSBTbMPzDNqMAkEg5yurZCzQNUVgAFPY9FUmKyAuhlP4R+D5BqrZmSVCNwFKcGU4BaFwk/IT/CGRnmhidxAZh+PMKfxBsDegHXtwVUXIyGXyi3zEBB5U1B5/RcoWDMLiaKkcM2pbgGwbTY5IWuUoOK9C+7xMNi8IeCDz8CfCcZw0XPmONkTcRfQLcbdewRWDt0RfhauAv/Cwi6d1GGwHWS7c07PdbL+0v9uazMrisIVosy2/ZpiR0cuPKmhtzTKMGQvvWK2ovBLTYeMstgvDx3ERpu/cvbc9dBjfY7sITLskkYZRuGoOcj9NGHU/cwm0P7v+5+/ksYcYW+KsYsAdZix1xHWNt0IOtKvCZJA9t3o4YwGzLhjb8s/7yemRXDhbbdpofdNGjBYV77Xrjam5hLga+TYLER9nDRgDDG0TAmPxkinKomwoypzi5ZNBwY7RPqreI5kFe4RO0FATjM0YQwBL2b//OnFmyHGUxTYyAweV4HTYI44S3SW/ulIMYKMfnjrNAFGtuiK1rN4RJMDekwlie3VGjO4OYvO87Agu/NGtqRkWtYMbZi5clWQJMdaRhZBrgFDNtjqLCjnCu9mxdEHTWYoWwDprADQsbmdLyEK4fsztNkoZasKdRjmYg1jr+dM68S4A9Bc5oVBVzPBZeaECPz02NNC2Ts0tgDY8I+hS4lJosB8Vs5qzVyE5Sey7riATTNmnGc45sSDnf9MggFsDerSoHMGgCyZfyQdkrgCbypQG6AMQ5HTGfsnsm6QNfCmrbJXk+q5Gb6XbWwspXxQYHWDN2cR6nSqCsPP8F7Ggm41P0VJnVb+kLZn8H5mD9Ub6qutCuM+Zt/7FLb+E/QQh2Pcy7ajYeY7ncF8xZB0SFzinNQVfKcJwqywXYByyyAbQHglI4rRZ+cwDJinFDWcijCMw8YMvjVgiJPGRBhlryYM5gRfA8bg7znmljQeBnwANmgUYbA7TbCu2H58wyjB5MgqUBEGu20GDxmxH4Paju9mZgbfs6nCcAU/AINIDnEmwajeNmMwmLsJOEvgVzljYUDTrOzVhMHA54ygMVMaMirzjLJXEwJDYRjIDeAnfWcU3U3UuhncMkpeTfEPumjNMGbU/M1s0HkOvtiaqZth1gxazah5AgagWyPsqz+TAcCmDug0G4uRQ1LGQ1OVosPpTCsAC7i7RO6krB1cH8AmQiCuwFhMoOraTCC75sctgIB9xcywRIbSQ0Qpw5boM63NUI9zqx9XzjiWiyJBihj1nNYZMmLwi8D5YgFO3WhfxCW5tcHY9GOv72OWhDggr7IuM7UMR6M0tsXdKzge/uh7Jbb5tI/8r40nboHGeYTI+FeGYQZmb4O4pvRzYDLuJmg6CuviIebdbL8PUQuXUuq6p/Qh98s382x+ANigaRRuryfqua5IfDwQqzGrRDKZhrl/OR7KHRIw0GpGDw3oMPtLUZTFcb6KJBvMxhKh4+5WVsuSBq2ZFnpzonFwPn4rDKhdVhHgqkJBOVo2jSuNakpJ7NZgTYttnNOpgZEJBbkltR/wWZMrnNWpYUq92jfz7als23qSxNBjwUASGKbf5YPkVhLGtB+BjxgtGEPIgmil+lqHuDLvG5ksbMLUhWF7zXD+6HvPIjTj8EvZBa0OjEGQKJoh3W3dCeYaJ5f80ytaMIwhFxtydZJ5kKPGsMEiGqbANL1Fw6LFnS0VUzpVuyk6yr0m9GCaSVw52ULWW4VIXMoQBdIBow9jCFUjkCX9kpBBX8+umm2MZuKpQXc+bijRrB6zaBmEj02QdmMZdGXThjE4QWP+HwVkBDPaTT7shwUpTIeLpA/T7IzHFiWIC2yjm45KxNeeHIwo0QSYpmJlWSe/FVYMHbnuOh9RI5GPZRWcDaZNhOcPTp9BfJYlbuX7y9DgC+IjH+ViOA3GEOy6k9dsnp7kTjWMrytZXwuaJ4x0ZJsIYzBxuuJX/UF8cIaTrQojKbH+au2OI54wE0yLs9/APcUuk2JE7tn2EYZTV488VnxYj8leOx9MO5e3aW+6R8jh7rBpCjna04k0P12n269DGSvbXerCIEoBEnPAtDyt6xLZnA+XyyU91gVvU2Er+mwxwWnzZ/vCKfbkMx5K1etrJpiv0nxKmaPzlDZ8S+9PsXzNc0Qn/HO9YZaqN8xS9YZZqt4wS9VvgkG/DPSGebLeMEsV+jm9l/w4KAbzA2FKPy70S6ev90HtXp6KO5hg1pDLfyTs68Av+RFq7LvNr/l5cOSL2mb8gjCddGX3MNmEhDFPUje27x4mkn1MYJmiqYXABP6rTZus61rQie9YyVwhlijadU7oBqu8WNOwXja1Lkw45vtVy1F3xPRhzBiPiF6exLp3q9KPifJ1D7D/vR4/mvQQ4FVNTx/1b0RI1S/7Y7RaJUmLsCAJ44EFgDH9Ytw97zNFuAP4rUBxhPG14EveqDFBC/BbiXAgcVzWpz9JChel9prOpSy5wF4vcIRnM+PEfpmek++MkX8TRz5Tm+SclpW/yxAHHgymbZ8ozDJ7UcrCKJB4IklgXk9vmKXq/5ix1t9CIeIXAAAAAElFTkSuQmCC" width="20" height="20" /></span>XAMPP</span>
+            <div class="skill-badges">
+  
+  <!-- <span class="skill-badge"><span class="skill-badge-icon"><i class="devicon-mysql-plain colored"></i></span>MySQL</span> -->
+  
+  <span class="skill-badge">
+  <span class="skill-badge-icon">
+    <img src="data:image/png;base64,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" width="20" height="20" />
+  </span>
+  phpMyAdmin
+</span>
+
+</div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-header">
+            <!-- <div class="skill-card-icon ai" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="10" r="3" />
+                <path d="M12 13v6" />
+                <path d="M8 5l1.5 3M16 5l-1.5 3" />
+                <path d="M4 12h3M17 12h3" />
+                <path d="M7 18h10" />
+              </svg>
+            </div> -->
+            <div>
+              <h3 class="skill-card-title">Exploring AI</h3>
+              <p class="skill-card-subtitle">Learning prompt strategies and generative models to create intelligent experiences.</p>
+            </div>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="skill-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v10H4z"/><path d="M7 8l3 3-3 3"/></svg></span>Prompt Engineering</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 5 5 .5-4 3 1.5 5-4-2.5-4 2.5L9 11 5 8.5 10 8z"/></svg></span>Generative AI</span>
+            <span class="skill-badge"><span class="skill-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20c4.418 0 8-3.582 8-8 0-2.1-.84-4-2.2-5.4"/><path d="M4 12c0 4.418 3.582 8 8 8 2.1 0 4-.84 5.4-2.2"/><path d="M8 6.5C9.5 5.3 11.6 5 13.5 5.8"/></svg></span>Large Language Models (LLMs)</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+<!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-project="resume-builder">
+          <img src="images/Reume.png" alt="Resume Builder screenshot" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Resume Builder</h3>
+          <p class="project-summary">Modern resume builder with instant preview and PDF generation.</p><br>
+          <button class="btn btn-detail open-project" data-id="resume-builder">View Details</button>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-project="superior-it">
+          <img src="images/IT.png" alt="Superior IT Society preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Superior IT Society</h3>
+          <p class="project-summary">Community platform for IT students with event management.</p><br>
+          <button class="btn btn-detail open-project" data-id="superior-it">View Details</button>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card project-extra reveal" data-project="echo-system">
+          <img src="images/ECD.png" alt="Echocardiography System preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><br>
+            </div>
+          </div> <br>
+          <h3 class="project-title">Echocardiography System</h3>
+          <p class="project-summary">Medical reporting system for cardiology diagnostics.</p> <br>
+          <button class="btn btn-detail open-project" data-id="echo-system">View Details</button>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-project="transport-portal">
+          <img src="images/UTAP.png" alt="Transport Automation preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7h2"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Transport Automation</h3>
+          <p class="project-summary">University transportation management and tracking portal.</p><br>
+          <button class="btn btn-detail open-project" data-id="transport-portal">View Details</button>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal" data-project="fake-os">
+          <img src="images/OS.png" alt="Web-based Fake Operating System preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M6 18h12"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Web-Based Fake Operating System</h3>
+          <p class="project-summary">Browser OS simulation with draggable windows, taskbar, and mini apps for a desktop-style experience.</p><br>
+          <button class="btn btn-detail open-project" data-id="fake-os">View Details</button>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal" data-project="grand-event">
+          <img src="images/GE.png" alt="Grand Event website preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16"/><path d="M5 4h14v10H5z"/><path d="M8 14v6"/><path d="M12 14v6"/><path d="M16 14v6"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Grand Event</h3>
+          <p class="project-summary">Event management landing page with clean structure, responsive layout, and polished event details.</p><br>
+          <button class="btn btn-detail open-project" data-id="grand-event">View Details</button>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card reveal" data-project="pbl-management">
+          <img src="images/PBL.png" alt="PBL Management preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">PBL Management</h3>
+          <p class="project-summary">Project-based learning management interface for tracking teams, tasks, and progress.</p><br>
+          <button class="btn btn-detail open-project" data-id="pbl-management">View Details</button>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card project-extra reveal" data-project="smart-expense-analyzer">
+          <img src="images/SEA.png" alt="Smart Expense Analyzer preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-7"/><path d="M19 7v5h-5"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Smart Expense Analyzer</h3>
+          <p class="project-summary">Expense tracking dashboard that helps users review spending patterns clearly.</p><br>
+          <button class="btn btn-detail open-project" data-id="smart-expense-analyzer">View Details</button>
+        </article>
+
+        <!-- Project 9 -->
+        <article class="project-card project-extra reveal" data-project="mood-analyzer">
+          <img src="images/mood.png" alt="Mood Analyzer preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Mood Analyzer</h3>
+          <p class="project-summary">Simple mood-checking interface with clean visual feedback and responsive layout.</p><br>
+          <button class="btn btn-detail open-project" data-id="mood-analyzer">View Details</button>
+        </article>
+
+        <!-- Project 10 -->
+        <article class="project-card project-extra reveal" data-project="voice-notes">
+          <img src="images/Voice Notes.png" alt="Voice Notes preview" class="project-card-image" />
+          <div class="project-card-header">
+            <div class="project-icon-wrap proj-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+            </div>
+          </div><br>
+          <h3 class="project-title">Voice Notes</h3>
+          <p class="project-summary">A neat voice-note concept interface for recording and organizing quick thoughts.</p><br>
+          <button class="btn btn-detail open-project" data-id="voice-notes">View Details</button>
+        </article>
+
+      </div>
+      <div class="projects-more reveal">
+        <button class="btn btn-secondary" id="explore-more-projects" type="button">View All Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modal-body">
+        <!-- Content injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Pathway</span>
+        <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="clean-timeline">
+        <div class="timeline-box reveal">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/>
+              <path d="M7 11.5v4.2c1.4 1.5 3 2.3 5 2.3s3.6-.8 5-2.3v-4.2"/>
+              <path d="M19 10.5v5.2"/>
+            </svg>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-year">2024 – Present</span>
+            <h3 class="timeline-title">BSIT (Bachelor of IT)</h3>
+            <p class="timeline-org">Superior University Faisalabad</p>
+            <p class="timeline-desc">Specializing in Full Stack Development and AI.</p>
+          </div>
+        </div>
+        <div class="timeline-box reveal">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 4h10a2 2 0 0 1 2 2v14l-3-1.8-2 1.2-2-1.2-2 1.2-2-1.2L5 20V6a2 2 0 0 1 2-2Z"/>
+              <path d="M9 8h6M9 12h6M9 16h4"/>
+            </svg>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-year">2022 – 2024</span>
+            <h3 class="timeline-title">Intermediate (ICS)</h3>
+            <p class="timeline-org">Muhammad Hussain Int. College</p>
+          </div>
+        </div>
+        <div class="timeline-box reveal">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 20h16M6 20V9l6-4 6 4v11"/>
+              <path d="M9 20v-6h6v6M9 11h.01M12 11h.01M15 11h.01"/>
+            </svg>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-year">2021 – 2022</span>
+            <h3 class="timeline-title">Matriculation (Science)</h3>
+            <p class="timeline-org">Govt Girls High School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Awards</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon-wrap">🏆</div>
+          <h3 class="ach-title">Honhaar Scholarship</h3>
+          <p class="ach-desc">Recipient of the fully funded Honhaar Scholarship (CM Punjab) awarded for academic excellence.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon-wrap">⭐</div>
+          <h3 class="ach-title">CGPA: 3.79 / 4.0</h3>
+          <p class="ach-desc">Consistently maintaining superior academic performance at University.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon-wrap">💻</div>
+          <h3 class="ach-title">Academic Excellence</h3>
+          <p class="ach-desc">Recognized for top-tier performance in BSIT courseware.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon-wrap">🎖️</div>
+          <h3 class="ach-title">Certificate of Appreciation</h3>
+          <p class="ach-desc">CS & IT Open House 2025, Superior University Faisalabad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-subtitle">Let's Connect</h3>
+          <!-- <p class="contact-text">My inbox is always open. I'll get back to you as soon as possible!</p> -->
+          <div class="contact-links">
+            <a href="mailto:mahamashrafgill9@gmail.com" class="contact-item" id="email-link">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">mahamashrafgill9@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/maham-ashraf-it/" target="_blank" rel="noopener" class="contact-item" id="linkedin-link">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">Maham Ashraf</span>
+              </div>
+            </a>
+            <a href="https://github.com/maham-ashraf" target="_blank" rel="noopener" class="contact-item" id="github-link">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">maham-ashraf</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/maham_ashraf_dev?igsh=MTN0ZGV4dGViem1yYQ==" target="_blank" rel="noopener" class="contact-item" id="instagram-link">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Instagram</span>
+                <span class="contact-item-value">Maham</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <div class="input-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="form-name" name="name" placeholder="Your full name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <div class="input-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <textarea id="form-message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+   <center>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket">/&gt;</span>
+           </div> -->
+          <!-- <p class="footer-text">Designed &amp; Built by <strong>Maham Ashraf</strong> — BSIT Student &amp; Frontend Developer</p>  -->
+           
+        <div class="footer-socials">
+          <a href="https://github.com/maham-ashraf" target="_blank" rel="noopener" class="footer-social" id="footer-github" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/maham-ashraf-it/" target="_blank" rel="noopener" class="footer-social" id="footer-linkedin" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/maham_ashraf_dev?igsh=MTN0ZGV4dGViem1yYQ==" target="_blank" rel="noopener" class="footer-social" id="footer-instagram" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Maham Ashraf. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
